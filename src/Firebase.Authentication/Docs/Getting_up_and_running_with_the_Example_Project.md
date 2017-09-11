@@ -50,7 +50,8 @@ If you want an overview of the JS API see [this wiki page](https://github.com/cb
 
 - Set the 'Debug signing certificate SHA-1' to the debug sha1 you get from running:
   - in osx: `keytool -exportcert -list -v -alias androiddebugkey -keystore ~/.android/debug.keystore`
-  - in windows: `keytool -exportcert -list -v -alias androiddebugkey -keystore %USERPROFILE%\.android\debug.keystore`
+  - in windows: `keytool -exportcert -list -v -alias androiddebugkey -keystore %USERPROFILE%\.android\debug.keystore` 
+    *Remeber to add the path for the keytool to your environment variables, normally found at `C:\Program Files\Java\jre1.8.0_144\bin`*
 - Save the config file & copy to your project directory next to the `unoproj`
 
 ![](https://github.com/cbaggers/Fuse.Firebase/blob/master/docs/wikiResources/3.jpeg)
